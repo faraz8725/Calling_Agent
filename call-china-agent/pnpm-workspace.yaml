@@ -1,0 +1,5 @@
+allowBuilds:
+  '@livekit/blingfire': true
+  '@livekit/local-inference': true
+  protobufjs: true
+  sharp: true
