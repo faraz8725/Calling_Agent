@@ -1,0 +1,145 @@
+.call-details-page {
+  width: 100%;
+}
+
+.call-details-header {
+  margin-bottom: 25px;
+}
+
+.back-link {
+  display: inline-block;
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.call-details-header h1 {
+  color: #172033;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.call-details-header p {
+  color: #778198;
+  font-size: 14px;
+}
+
+.call-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.call-info-card {
+  background: #fff;
+  padding: 22px;
+  border: 1px solid #e9edf4;
+  border-radius: 12px;
+}
+
+.call-info-card span {
+  display: block;
+  color: #778198;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.call-info-card h3 {
+  color: #172033;
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+.call-transcript-section {
+  background: #fff;
+  border: 1px solid #e9edf4;
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.call-transcript-section h2 {
+  color: #172033;
+  font-size: 19px;
+  margin-bottom: 22px;
+}
+
+.transcript-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.transcript-message {
+  max-width: 80%;
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  align-self: flex-start;
+}
+
+.transcript-message.assistant {
+  background: #eef2ff;
+  align-self: flex-end;
+}
+
+.transcript-role {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
+
+.transcript-message p {
+  color: #344054;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.transcript-time {
+  display: block;
+  color: #98a2b3;
+  font-size: 11px;
+  margin-top: 9px;
+}
+
+.no-transcript {
+  color: #778198;
+  text-align: center;
+  padding: 25px;
+}
+
+.call-details-loading,
+.call-details-error {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  color: #778198;
+}
+
+.call-details-error {
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .call-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transcript-message {
+    max-width: 95%;
+  }
+
+  .call-transcript-section {
+    padding: 18px;
+  }
+}

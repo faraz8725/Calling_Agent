@@ -1,0 +1,56 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.example.*
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+.next/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local databases and data
+*.sqlite
+*.sqlite3
+*.db
+
+# Python cache (if any)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# LiveKit local configuration and secrets
+.livekit/
+**/.livekit/
+call-china-agent/.env.local
+call-china-agent/.env
+
+# Temporary files
+tmp/
+temp/
